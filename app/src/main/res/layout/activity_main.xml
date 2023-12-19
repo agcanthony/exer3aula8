@@ -1,0 +1,44 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnChamarApi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Chamar API"
+        android:textColor="@android:color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:indeterminateTint="@color/material_dynamic_neutral_variant100" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txtResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>
